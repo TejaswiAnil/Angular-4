@@ -1,0 +1,12 @@
+<h6>{{displayStr}}</h6>
+<ul class="dataUl">
+	<!-- <li *ngFor="let list of dataList" [class.selected]="list === selectedVal" (click)="selectedItem(list)"> -->
+		<li *ngFor="let list of dataList">
+			<a routerLink="/details/{{list.id}}">
+		<span class="badge">{{list.id}}</span>&nbsp;{{list.name}}</a>
+	</li>
+</ul>
+
+<!-- <display-details [data]="selectedVal"></display-details> for routing-->
+
+
